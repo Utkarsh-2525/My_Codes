@@ -1,0 +1,13 @@
+Q. Climbing Stairs
+(Leetcode Question No. 70)
+// Beats 100% in Runtime and 91.92% in Memory
+class Solution 
+{
+    public int climbStairs(int n) 
+    {
+      int answer = 1;
+      for(int i=0,pre=0;i<n;i++) 
+      pre=(answer+=pre)-pre;
+      return answer;   
+    }
+}
